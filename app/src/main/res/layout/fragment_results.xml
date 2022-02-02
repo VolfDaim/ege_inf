@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".results">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="17dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginLeft="101dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="16dp"
+            android:text="Тест пройден!"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/pR"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/pR"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                app:background_progressbar_color="#FFCDD2"
+                app:background_progressbar_width="5dp"
+                app:progressbar_color="#F44336"
+                app:progressbar_width="10dp" />
+
+            <TextView
+                android:id="@+id/resB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="TextView"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="143dp"
+                tools:layout_editor_absoluteY="76dp" />
+
+        </RelativeLayout>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RatingBar
+                android:id="@+id/raitB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="0dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="0"
+                app:layout_constraintBottom_toTopOf="@+id/adv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pR" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/adv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="Отлично!"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/exit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/raitB" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp">
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="136dp"
+            android:layout_height="78dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/textView8"
+            android:layout_weight="1"
+            android:background="@android:color/holo_purple"
+            android:text="Выход"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/repeat"
+            app:layout_constraintTop_toBottomOf="@+id/adv" />
+
+        <Button
+            android:id="@+id/repeat"
+            android:layout_width="130dp"
+            android:layout_height="78dp"
+            android:layout_alignTop="@+id/exit"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="0dp"
+            android:layout_toStartOf="@+id/textView8"
+            android:layout_weight="1"
+            android:background="@android:color/holo_purple"
+            android:text="Заново"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/exit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adv" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,431 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 4.1.6.2 (Linux)">
+	<META NAME="AUTHOR" CONTENT="Пользователь Windows">
+	<META NAME="CREATED" CONTENT="20181114;161100000000000">
+	<META NAME="CHANGEDBY" CONTENT="Пользователь Windows">
+	<META NAME="CHANGED" CONTENT="20181117;180200000000000">
+	<META NAME="AppVersion" CONTENT="14.0000">
+	<META NAME="DocSecurity" CONTENT="0">
+	<META NAME="HyperlinksChanged" CONTENT="false">
+	<META NAME="LinksUpToDate" CONTENT="false">
+	<META NAME="ScaleCrop" CONTENT="false">
+	<META NAME="ShareDoc" CONTENT="false">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 5.5in 8.5in; margin-left: 0.49in; margin-right: 0.59in; margin-top: 0.79in; margin-bottom: 0.79in }
+		P { margin-bottom: 0.08in; direction: ltr; widows: 2; orphans: 2 }
+		P.western { font-family: "Calibri", serif }
+		P.cjk { font-family: "Calibri" }
+		P.ctl { font-family: "Times New Roman" }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="ru-RU" DIR="LTR">
+<UL>
+	<LI><P STYLE="margin-bottom: 0in"><A NAME="_GoBack"></A><FONT SIZE=5 STYLE="font-size: 20pt">перевод
+	чисел между десятичной, двоичной,
+	восьмеричной и шестнадцатеричной
+	системами счисления)</FONT></P>
+	<TABLE WIDTH=621 CELLPADDING=7 CELLSPACING=0 BGCOLOR="#ffcccc">
+		<COL WIDTH=605>
+		<TR>
+			<TD WIDTH=605 VALIGN=TOP BGCOLOR="#ccffcc" STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+				<P CLASS="western" STYLE="margin-top: 0.08in; margin-bottom: 0in">
+				<FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt"><B>Полезно
+				помнить, что в двоичной системе:</B></FONT></FONT></P>
+				<UL>
+					<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=5 STYLE="font-size: 20pt">четные
+					числа оканчиваются на 0, нечетные –
+					на 1; </FONT>
+					</P>
+					<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=5 STYLE="font-size: 20pt">числа,
+					которые делятся на 4, оканчиваются
+					на 00, и т.д.; числа, которые делятся на
+					2</FONT><SUP><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">k</SPAN></FONT></SUP><FONT SIZE=5 STYLE="font-size: 20pt">,
+					оканчиваются на </FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><I>k</I></SPAN></FONT></FONT><FONT SIZE=5 STYLE="font-size: 20pt">
+					нулей</FONT></P>
+					<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=5 STYLE="font-size: 20pt">если
+					число </FONT><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">N</SPAN></FONT><FONT SIZE=5 STYLE="font-size: 20pt">
+					принадлежит интервалу 2</FONT><SUP><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">k</SPAN></FONT></SUP><SUP><FONT SIZE=5 STYLE="font-size: 20pt">-1
+					</FONT></SUP><FONT FACE="Symbol, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"></SPAN></FONT></FONT><FONT SIZE=5 STYLE="font-size: 20pt">
+					</FONT><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">N</SPAN></FONT><FONT SIZE=5 STYLE="font-size: 20pt">
+					&lt; 2</FONT><SUP><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">k</SPAN></FONT></SUP><FONT SIZE=5 STYLE="font-size: 20pt">,
+					в его двоичной записи будет всего </FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><I>k</I></SPAN></FONT></FONT><FONT SIZE=5 STYLE="font-size: 20pt">
+					цифр, например, для числа </FONT><FONT SIZE=5 STYLE="font-size: 20pt"><B>125</B></FONT><FONT SIZE=5 STYLE="font-size: 20pt">:</FONT></P>
+				</UL>
+				<P STYLE="margin-bottom: 0in"><FONT SIZE=5 STYLE="font-size: 20pt">		2</FONT><SUP><FONT SIZE=5 STYLE="font-size: 20pt">6</FONT></SUP><FONT SIZE=5 STYLE="font-size: 20pt">
+				= 64 </FONT><FONT FACE="Symbol, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"></SPAN></FONT></FONT><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">
+				</SPAN></FONT><FONT SIZE=5 STYLE="font-size: 20pt"><B>125</B></FONT><FONT SIZE=5 STYLE="font-size: 20pt">
+				</FONT><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">&lt;</SPAN></FONT><FONT SIZE=5 STYLE="font-size: 20pt">
+				128 = 2</FONT><SUP><FONT SIZE=5 STYLE="font-size: 20pt">7</FONT></SUP><FONT SIZE=5 STYLE="font-size: 20pt">,
+				   125 = 1111101</FONT><SUB><FONT SIZE=5 STYLE="font-size: 20pt">2</FONT></SUB><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">
+				 (7 цифр)</SPAN></FONT></P>
+				<UL>
+					<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt">числа
+					вида 2</FONT></FONT><FONT COLOR="#000000"><SUP><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">k</SPAN></FONT></SUP></FONT><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt">
+					записываются в двоичной системе как
+					единица и </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><I>k</I></SPAN></FONT></FONT><FONT SIZE=5 STYLE="font-size: 20pt">
+					</FONT><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt">нулей,
+					например:</FONT></FONT></P>
+				</UL>
+				<P STYLE="margin-left: 0.17in; margin-bottom: 0in"><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt">	</FONT></FONT><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">16
+				= 2</SPAN></FONT></FONT><FONT COLOR="#000000"><SUP><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">4</SPAN></FONT></SUP></FONT><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">
+				= 10000</SPAN></FONT></FONT><FONT COLOR="#000000"><SUB><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">2</SPAN></FONT></SUB></FONT></P>
+				<UL>
+					<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt">числа
+					вида 2</FONT></FONT><FONT COLOR="#000000"><SUP><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">k</SPAN></FONT></SUP></FONT><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt">-1</FONT></FONT><FONT COLOR="#000000"><SUP><FONT SIZE=5 STYLE="font-size: 20pt">
+					</FONT></SUP></FONT><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt">записываются
+					в двоичной системе </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><I>k</I></SPAN></FONT></FONT><FONT SIZE=5 STYLE="font-size: 20pt">
+					</FONT><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt">единиц,
+					например:</FONT></FONT></P>
+				</UL>
+				<P STYLE="margin-left: 0.17in; margin-bottom: 0in"><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt">	</FONT></FONT><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">1</SPAN></FONT></FONT><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt">5</FONT></FONT><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">
+				= 2</SPAN></FONT></FONT><FONT COLOR="#000000"><SUP><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">4</SPAN></FONT></SUP></FONT><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt">-1</FONT></FONT><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">
+				= 1</SPAN></FONT></FONT><FONT COLOR="#000000"><FONT SIZE=5 STYLE="font-size: 20pt">111</FONT></FONT><FONT COLOR="#000000"><SUB><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">2</SPAN></FONT></SUB></FONT></P>
+				<UL>
+					<LI><P><FONT SIZE=5 STYLE="font-size: 20pt">если известна
+					двоичная запись числа N, то двоичную
+					запись числа 2·N можно легко получить,
+					приписав в конец ноль, например:<BR>	15
+					= 1111</FONT><SUB><FONT SIZE=5 STYLE="font-size: 20pt">2</FONT></SUB><FONT SIZE=5 STYLE="font-size: 20pt">,
+						30 = 11110</FONT><SUB><FONT SIZE=5 STYLE="font-size: 20pt">2</FONT></SUB><FONT SIZE=5 STYLE="font-size: 20pt">,
+					        60 = 111100</FONT><SUB><FONT SIZE=5 STYLE="font-size: 20pt">2</FONT></SUB><FONT SIZE=5 STYLE="font-size: 20pt">,
+						120 = 1111000</FONT><SUB><FONT SIZE=5 STYLE="font-size: 20pt">2</FONT></SUB></P>
+				</UL>
+			</TD>
+		</TR>
+	</TABLE>
+	<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=5 STYLE="font-size: 20pt">желательно
+	выучить наизусть таблицу двоичного
+	представления чисел 0-7 в виде </FONT><FONT SIZE=5 STYLE="font-size: 20pt"><I>триад</I></FONT><FONT SIZE=5 STYLE="font-size: 20pt">
+	(групп из 3-х битов):</FONT></P>
+</UL>
+<TABLE WIDTH=331 CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=51>
+	<COL WIDTH=52>
+	<COL WIDTH=52>
+	<COL WIDTH=52>
+	<COL WIDTH=51>
+	<TR VALIGN=TOP>
+		<TD WIDTH=51 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>X</B></FONT></FONT><SUB><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>10</B></SPAN></FONT></FONT></SUB><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">,
+			</SPAN></FONT><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>X</B></FONT></FONT><SUB><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>8</B></SPAN></FONT></FONT></SUB></P>
+		</TD>
+		<TD WIDTH=52 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>X&shy;</B></SPAN></FONT></FONT><SUB><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>2</B></SPAN></FONT></FONT></SUB></P>
+		</TD>
+		<TD WIDTH=52 STYLE="border-top: none; border-bottom: none; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=52 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>X</B></FONT></FONT><SUB><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>10</B></SPAN></FONT></FONT></SUB><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US">,
+			</SPAN></FONT><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>X</B></FONT></FONT><SUB><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>8</B></SPAN></FONT></FONT></SUB></P>
+		</TD>
+		<TD WIDTH=51 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>X&shy;</B></SPAN></FONT></FONT><SUB><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>2</B></SPAN></FONT></FONT></SUB></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=51 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>0</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=52 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>000</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=52 STYLE="border-top: none; border-bottom: none; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=52 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>4</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=51 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>100</B></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=51 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>1</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=52 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>001</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=52 STYLE="border-top: none; border-bottom: none; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=52 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>5</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=51 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>101</B></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=51 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>2</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=52 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>010</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=52 STYLE="border-top: none; border-bottom: none; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=52 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>6</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=51 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>110</B></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=51 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>3</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=52 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>011</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=52 STYLE="border-top: none; border-bottom: none; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=52 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>7</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=51 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>111</B></FONT></FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-left: 0.59in; margin-bottom: 0in"><FONT SIZE=5 STYLE="font-size: 20pt">и
+таблицу двоичного представления чисел
+0-15 (в шестнадцатеричной системе – 0-F</FONT><SUB><FONT SIZE=5 STYLE="font-size: 20pt">16</FONT></SUB><FONT SIZE=5 STYLE="font-size: 20pt">)
+в виде </FONT><FONT SIZE=5 STYLE="font-size: 20pt"><I>тетрад</I></FONT><FONT SIZE=5 STYLE="font-size: 20pt">
+(групп из 4-х битов):</FONT></P>
+<TABLE WIDTH=397 CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=48>
+	<COL WIDTH=74>
+	<COL WIDTH=22>
+	<COL WIDTH=49>
+	<COL WIDTH=45>
+	<COL WIDTH=73>
+	<TR VALIGN=TOP>
+		<TD WIDTH=48 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>X</B></FONT></FONT><SUB><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>10</B></SPAN></FONT></FONT></SUB></P>
+		</TD>
+		<TD WIDTH=74 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>X&shy;</B></SPAN></FONT></FONT><SUB><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>2</B></SPAN></FONT></FONT></SUB></P>
+		</TD>
+		<TD WIDTH=22 STYLE="border-top: none; border-bottom: none; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=49 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>X</B></FONT></FONT><SUB><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>10</B></SPAN></FONT></FONT></SUB></P>
+		</TD>
+		<TD WIDTH=45 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>X&shy;</B></SPAN></FONT></FONT><SUB><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>16</B></SPAN></FONT></FONT></SUB></P>
+		</TD>
+		<TD WIDTH=73 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>X&shy;</B></SPAN></FONT></FONT><SUB><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>2</B></SPAN></FONT></FONT></SUB></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=48 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>0</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=74 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>0000</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=22 STYLE="border-top: none; border-bottom: none; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=49 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>8</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=45 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>8</B></SPAN></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=73 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>1</B></SPAN></FONT></FONT><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>000</B></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=48 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>1</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=74 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>0001</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=22 STYLE="border-top: none; border-bottom: none; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=49 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>9</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=45 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>9</B></SPAN></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=73 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>1</B></SPAN></FONT></FONT><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>001</B></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=48 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>2</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=74 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>0010</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=22 STYLE="border-top: none; border-bottom: none; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=49 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>10</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=45 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>A</B></SPAN></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=73 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>1</B></SPAN></FONT></FONT><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>010</B></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=48 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>3</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=74 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>0011</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=22 STYLE="border-top: none; border-bottom: none; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=49 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>11</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=45 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>B</B></SPAN></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=73 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>1</B></SPAN></FONT></FONT><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>011</B></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=48 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>4</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=74 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>0100</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=22 STYLE="border-top: none; border-bottom: none; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=49 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>12</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=45 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>C</B></SPAN></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=73 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>1</B></SPAN></FONT></FONT><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>100</B></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=48 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>5</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=74 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>0101</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=22 STYLE="border-top: none; border-bottom: none; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=49 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>13</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=45 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>D</B></SPAN></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=73 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>1</B></SPAN></FONT></FONT><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>101</B></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=48 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>6</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=74 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>0110</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=22 STYLE="border-top: none; border-bottom: none; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=49 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>14</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=45 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>E</B></SPAN></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=73 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>1</B></SPAN></FONT></FONT><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>110</B></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=48 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>7</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=74 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>0111</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=22 STYLE="border-top: none; border-bottom: none; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=49 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>15</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=45 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>F</B></SPAN></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=73 STYLE="border: 1px solid #00000a; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=CENTER><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>1</B></SPAN></FONT></FONT><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>111</B></FONT></FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<UL>
+	<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=5 STYLE="font-size: 20pt">отрицательные
+	целые числа хранятся в памяти в двоичном
+	дополнительном коде (подробнее см.
+	презентацию «Компьютер изнутри»)</FONT></P>
+	<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=5 STYLE="font-size: 20pt">для
+	перевода отрицательного числа </FONT><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>(-</B></FONT></FONT><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><SPAN LANG="en-US"><B>a</B></SPAN></FONT></FONT><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>)</B></FONT></FONT><FONT SIZE=5 STYLE="font-size: 20pt">
+	в двоичный дополнительный код нужно
+	сделать следующие операции:</FONT></P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=5 STYLE="font-size: 20pt">перевести
+		число </FONT><FONT FACE="Courier New, serif"><FONT SIZE=5 STYLE="font-size: 20pt"><B>a-1</B></FONT></FONT><FONT SIZE=5 STYLE="font-size: 20pt">
+		в двоичную систему счисления;</FONT></P>
+		<LI><P STYLE="margin-bottom: 0in"><FONT SIZE=5 STYLE="font-size: 20pt">сделать
+		инверсию битов: заменить все нули на
+		единицы и единицы на нули в пределах
+		разрядной сетки (см. пример </FONT><FONT SIZE=5 STYLE="font-size: 20pt"><B>Р-00</B></FONT><FONT SIZE=5 STYLE="font-size: 20pt">
+		далее).</FONT></P>
+	</UL>
+</UL>
+<P CLASS="western" STYLE="margin-bottom: 0.14in"><BR><BR>
+</P>
+</BODY>
+</HTML>

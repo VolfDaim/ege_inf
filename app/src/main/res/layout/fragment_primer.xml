@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".primer">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:text="Задание 1"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:text="Задание 2"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Задание 3"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="задание 4" />
+
+            <Button
+                android:id="@+id/b5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 5" />
+
+            <Button
+                android:id="@+id/b6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 6" />
+
+            <Button
+                android:id="@+id/b7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 7" />
+
+            <Button
+                android:id="@+id/b8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 8" />
+
+            <Button
+                android:id="@+id/b9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 9" />
+
+            <Button
+                android:id="@+id/b10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:text="Задание 10"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/b11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 11" />
+
+            <Button
+                android:id="@+id/b12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 12" />
+
+            <Button
+                android:id="@+id/b13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 13" />
+
+            <Button
+                android:id="@+id/b14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 14" />
+
+            <Button
+                android:id="@+id/b15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 15" />
+
+            <Button
+                android:id="@+id/b16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 16" />
+
+            <Button
+                android:id="@+id/b17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 17" />
+
+            <Button
+                android:id="@+id/b18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 18" />
+
+            <Button
+                android:id="@+id/b19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 19" />
+
+            <Button
+                android:id="@+id/b20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 20" />
+
+            <Button
+                android:id="@+id/b21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 21" />
+
+            <Button
+                android:id="@+id/b22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 22" />
+
+            <Button
+                android:id="@+id/b23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:textColor="@android:color/background_light"
+                android:text="Задание 23" />
+            </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема:  Системы счисления и двоичное представление информации в памяти компьютера."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th1"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/kalk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Калькулятор систем"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <Button
+                        android:id="@+id/test"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/f1"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="52dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 2"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема:  Построение и анализ таблиц истинности логических выражений."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th2"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar2"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 3"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема: Использование информационных моделей (таблицы, диаграммы, графики).
+       Перебор вариантов, выбор лучшего по какому-то признаку.
+"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th3"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar3"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 4"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема:  Использование информационных моделей (таблицы, диаграммы, графики).
+       Перебор вариантов, выбор лучшего по какому-то признаку. Файловая система
+"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th4"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar4"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 5"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема: Кодирование и декодирование информации.
+"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th5"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar5"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 6"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема:  Выполнение и анализ простых алгоритмов. Поиск алгоритма минимальной длины"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th6"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar6"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 7"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема: Электронные таблицы."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th7"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar7"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 8"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема: Анализ программы."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th8"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar8"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 9"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема: Кодирование растровых изображений, звука. Скорость передачи информации."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th9"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar9"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 10"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема:  Кодирование данных, комбинаторика."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th10"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar10"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 11"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема: Рекурсивные алгоритмы"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th11"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar11"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 12"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема: Компьютерные сети. Адресация в интернете."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th12"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar12"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 13"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема:  Информационный объем сообщения."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th13"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar13"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 14"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема:  Выполнение алгоритмов для исполнителя"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th14"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar14"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 15"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема:  Графы. Количество путей."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th15"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar15"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 16"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема:  Кодирование чисел."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th16"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar16"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 17"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема:  СОставление запросов поисковых систем."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th17"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar17"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 18"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема:  Основные понятия мат. логики."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th18"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar18"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 19"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема: Работа с массивами и матрицами."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th19"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar19"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 20"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема: Анализ программы, содержащей циклы и ветвления."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th20"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar20"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 21"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема:  Анализ программы с подпрограммами."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th21"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar21"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 2"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема:  Динамическое программирование."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th22"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar22"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Задание 23"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тема: Преобразование логических выражений."
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/th23"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Теория"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light"
+                        android:typeface="normal" />
+
+                    <Button
+                        android:id="@+id/test23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="Тест"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:textColor="@android:color/background_light" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar23"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:progress="0" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
